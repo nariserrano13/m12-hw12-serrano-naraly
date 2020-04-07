@@ -1,0 +1,69 @@
+// const quotes =[
+//     " 'SHARING TEA WITH A FASCINATING STRANGER IS ONE OF LIFE’S TRUE DELIGHTS.' " ,
+//     " 'ITS TIME FOR YOU TO LOOK INWARD AND START ASKING YOURSELF THE BIG QUESTION: WHO ARE YOU AND WHAT DO YOU WANT?' ",
+//     " 'IT IS IMPORTANT TO DRAW WISDOM FROM MANY DIFFERENT PLACES.' ",
+//     " 'IT IS USUALLY BEST TO ADMIT MISTAKES WHEN THEY OCCUR, AND TO SEEK TO RESTORE HONOR.' ",
+//     " 'HOPE IS SOMETHING YOU GIVE YOURSELF. THAT IS THE MEANING OF INNER STRENGTH.' ",
+//     " 'SOMETIMES LIFE IS LIKE THIS DARK TUNNEL.' ",
+//     " 'DESTINY IS A FUNNY THING. YOU NEVER KNOW HOW THINGS ARE GOING TO WORK OUT.' ",
+//     " 'WHILE IT IS ALWAYS BEST TO BELIEVE IN ONESELF, A LITTLE HELP FROM OTHERS CAN BE A GREAT BLESSING.' ",
+//     " 'PRIDE IS NOT THE OPPOSITE OF SHAME, BUT ITS SOURCE. TRUE HUMILITY IS THE ONLY ANTIDOTE TO SHAME.' ",
+//     " 'LIFE HAPPENS WHEREVER YOU ARE, WHETHER YOU MAKE IT OR NOT.' "
+// ];
+
+
+// var quotes = [
+//     " 'SHARING TEA WITH A FASCINATING STRANGER IS ONE OF LIFE’S TRUE DELIGHTS.' " ,
+//     " 'ITS TIME FOR YOU TO LOOK INWARD AND START ASKING YOURSELF THE BIG QUESTION: WHO ARE YOU AND WHAT DO YOU WANT?' ",
+//     " 'IT IS IMPORTANT TO DRAW WISDOM FROM MANY DIFFERENT PLACES.' ",
+//     " 'IT IS USUALLY BEST TO ADMIT MISTAKES WHEN THEY OCCUR, AND TO SEEK TO RESTORE HONOR.' ",
+//     " 'HOPE IS SOMETHING YOU GIVE YOURSELF. THAT IS THE MEANING OF INNER STRENGTH.' ",
+//     " 'SOMETIMES LIFE IS LIKE THIS DARK TUNNEL.' ",
+//     " 'DESTINY IS A FUNNY THING. YOU NEVER KNOW HOW THINGS ARE GOING TO WORK OUT.' ",
+//     " 'WHILE IT IS ALWAYS BEST TO BELIEVE IN ONESELF, A LITTLE HELP FROM OTHERS CAN BE A GREAT BLESSING.' ",
+//     " 'PRIDE IS NOT THE OPPOSITE OF SHAME, BUT ITS SOURCE. TRUE HUMILITY IS THE ONLY ANTIDOTE TO SHAME.' ",
+//     " 'LIFE HAPPENS WHEREVER YOU ARE, WHETHER YOU MAKE IT OR NOT.' "
+// ];
+// //this allows the page to intially load with something in the quote container
+// document.getElementById("quote-container").innerHTML = quotes[0];
+
+// function irohQuotes(){
+//     var i,j,k;
+
+//     for (i = quotes.length -1; i > 0; i--){
+//           j = Math.floor(Math.random() * i)
+//           k = quotes[i]
+//           quotes[i] = quotes[j]
+//           quotes[j] = k
+//     }
+
+//     document.getElementById("quote-container").innerHTML = quotes[0];
+// }
+
+const quotes = [
+    " 'SHARING TEA WITH A FASCINATING STRANGER IS ONE OF LIFE’S TRUE DELIGHTS.' " ,
+    " 'ITS TIME FOR YOU TO LOOK INWARD AND START ASKING YOURSELF THE BIG QUESTION: WHO ARE YOU AND WHAT DO YOU WANT?' ",
+    " 'IT IS IMPORTANT TO DRAW WISDOM FROM MANY DIFFERENT PLACES.' ",
+    " 'IT IS USUALLY BEST TO ADMIT MISTAKES WHEN THEY OCCUR, AND TO SEEK TO RESTORE HONOR.' ",
+    " 'HOPE IS SOMETHING YOU GIVE YOURSELF. THAT IS THE MEANING OF INNER STRENGTH.' ",
+    " 'SOMETIMES LIFE IS LIKE THIS DARK TUNNEL.' ",
+    " 'DESTINY IS A FUNNY THING. YOU NEVER KNOW HOW THINGS ARE GOING TO WORK OUT.' ",
+    " 'WHILE IT IS ALWAYS BEST TO BELIEVE IN ONESELF, A LITTLE HELP FROM OTHERS CAN BE A GREAT BLESSING.' ",
+    " 'PRIDE IS NOT THE OPPOSITE OF SHAME, BUT ITS SOURCE. TRUE HUMILITY IS THE ONLY ANTIDOTE TO SHAME.' ",
+    " 'LIFE HAPPENS WHEREVER YOU ARE, WHETHER YOU MAKE IT OR NOT.' "
+];
+//this allows the page to intially load with something in the quote container
+document.getElementById("quote-container").innerHTML = quotes[0];
+
+irohQuotes =()=> {
+    let i,j,k;
+
+    for (i = quotes.length -1; i > 0; i--){
+          j = Math.floor(Math.random() * i)
+          k = quotes[i]
+          quotes[i] = quotes[j]
+          quotes[j] = k
+    }
+
+    document.getElementById("quote-container").innerHTML = quotes[0];
+}

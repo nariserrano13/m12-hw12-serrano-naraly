@@ -8,3 +8,55 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body{
+	background-color: #252719;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Baloo Thambi 2', cursive;
+	color: #efefef;
+	justify-content: center;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#quote-container{
+	font-size: 2rem;
+	width: 75%;
+	max-width: 50%;
+	text-align: center;
+	padding: 50px 0px 5px 0px;
+}
+
+
+main img{
+	
+	z-index: 90;
+	position: relative;
+}
+.horizontal-line{
+	border-top: 3px solid blanchedalmond;
+	width: 50%;
+	margin: auto;
+	z-index: 99;
+	position: relative;
+	top: 50px;
+}
+footer{
+	margin: 15px 0px;
+}
+footer a{
+	background-color: blanchedalmond;
+	text-decoration: none;
+	color: darkgreen;
+	padding: 0px 30px;
+	border-radius: 3px;
+	font-family: 'Baloo Thambi 2', cursive;
+	font-size: 2rem;
+}
+footer a:hover{
+	background-color: #f74c39;
+	color: #efefef;
+}
